@@ -1,0 +1,39 @@
+div#menu {
+    margin-top: 5px;
+    background: url("../images/menuBg.gif") repeat-x scroll 0 0 transparent;
+    border: 1px solid #5087A6;
+    height: 35px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    z-index: 9998;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.mainMenu {
+    margin: 0;
+    padding: 0;
+}
+
+.mainMenu li {
+    display: inline;
+    color: #FFFFFF;
+    float: left;
+    padding: 0px 5px;
+}
+
+.mainMenu li a, .mainMenu li a:link, .mainMenu li a:visited, .mainMenu li a:active {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    height: 35px;
+    display: block;
+}
+
+.mainMenu li a:hover {
+    background-color: #9ad1ed;
+}
+
+.mainMenu li a span {
+    padding: 0 14px 0 15px;
+    font-weight: bold;
+    line-height: 35px;
+}

@@ -1,0 +1,27 @@
+<%@ include file="/common/taglibs.jsp"%>
+
+<tiles:useAttribute id="menuList" name="menuList" />
+
+<security:authorize  access="isFullyAuthenticated() and hasRole('admin')" >
+
+<div id="mainMenu" class="mainMenu">
+	<ul>
+	      
+    <c:forEach var="item" items="${menuList}">
+    <security:authorize url="${item.link}">
+    
+        <li>
+            <c:url var="link" value="${item.link}"/>
+            <a href="${link}"><span><fmt:message key="${item.value}" /></span></a>
+        </li>
+        
+    </security:authorize>
+    </c:forEach>
+	        
+	</ul>
+</div>
+
+</security:authorize>
+
+
+

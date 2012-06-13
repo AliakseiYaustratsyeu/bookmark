@@ -1,0 +1,1 @@
+use bookmark;drop table if exists users_roles cascade;
